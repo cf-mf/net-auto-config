@@ -1,26 +1,32 @@
-# Automatic Network Configurator / Configurador de Rede Automático
+# Configurador de Rede Automático / Automatic Network Configurator
+
+### NOTA: Este repositório oferece dois scripts idênticos, mas com idiomas diferentes. Escolha o que preferir:
+
+- `network-config.bat` - prompts and comments in **English**
+
+- `configurar-rede.bat` - prompts e comentários em **Português**
+
+---
 
 ## 🇺🇸 English
 
 ### Description
-This Windows `.bat` script automatically configures **IP, DNS, and Proxy** on a network adapter. It supports multiple network profiles and operating modes (automatic or manual).
+This Windows `.bat` script automatically configures **IP, DNS, and Proxy** on a network adapter. It allows configuring a network profile and choosing operating modes (automatic or manual).
 
 ### Features
-- Automatic network adapter detection or manual selection.  
-- Set static IP or DHCP.  
+- Automatic or manual network adapter selection
+- Static IP or DHCP configuration.
 - Configure primary and secondary DNS.  
 - Enable or disable Proxy.  
-- Supports multiple network profiles via the `NOME_REDE` variable.
 
 ### Requirements
 - Windows (7, 8, 10, or 11)  
 - Run the script as **Administrator**  
-- Original `.bat` file should not be modified outside the configuration variables
 
 ### Usage
-1. Open `network-config.bat` with Notepad or another text editor..  
-2. Edit the configuration variables at the top of the script (optional):  
-   - `NOME_REDE` – profile label  
+1. Download or copy the content of `network-config.bat` into Notepad or another text editor.  
+2. Optionally, edit the configuration variables at the top of the script:  
+   - `NOME_REDE` – network profile label
    - `MODO_AUTO_ADMIN` – auto-elevate to admin (true/false)  
    - `MODO_SELECAO_REDE` – `auto` or `manual`  
    - `MODO_REDE` – `STATIC` or `DHCP`  
@@ -32,29 +38,28 @@ This Windows `.bat` script automatically configures **IP, DNS, and Proxy** on a 
 - Always backup your current network settings before using.  
 - If only one adapter is connected, it will be selected automatically.  
 - In automatic IP mode, the current last octet will be reused.
+- Do not modify the `.bat` file outside of the configuration variables, it may cause errors
 
 ---
 
 ## 🇧🇷 Português
 
 ### Descrição
-Este script `.bat` para Windows permite configurar automaticamente **IP, DNS e Proxy** em um adaptador de rede. Ele suporta múltiplos perfis de rede e modos de operação (automático ou manual).
+Este script `.bat` para Windows permite configurar automaticamente **IP, DNS e Proxy** em um adaptador de rede. Ele permite configurar um perfil de rede e escolher modos de operação (automático ou manual).
 
 ### Funcionalidades
-- Seleção automática do adaptador de rede ou escolha manual.  
+- Seleção automática ou manual do adaptador de rede.
 - Configuração de IP estático ou DHCP.  
-- Aplicação de DNS primário e secundário.  
+- Configuração de DNS primário e secundário. 
 - Ativação ou desativação de Proxy.  
-- Suporte para múltiplos perfis de rede via variável `NOME_REDE`.
 
 ### Pré-requisitos
 - Windows (7, 8, 10 ou 11)  
 - Executar o script como **Administrador**  
-- Arquivo `.bat` original não deve ser alterado fora das variáveis de configuração
 
 ### Como usar
-1. Abra o arquivo `network-config.bat` com o bloco de notas ou outro editor de texto.  
-2. Edite as variáveis de configuração no topo do script:  
+1. Faça download ou copie o conteúdo do `configurar-rede.bat` em um bloco de notas ou outro editor de texto.  
+2. Opcionalmente, edite as variáveis de configuração no topo do script:  
    - `NOME_REDE` – etiqueta do perfil de rede
    - `MODO_AUTO_ADMIN` – auto-elevar para administrador (true/false)  
    - `MODO_SELECAO_REDE` – `auto` ou `manual`  
@@ -64,9 +69,10 @@ Este script `.bat` para Windows permite configurar automaticamente **IP, DNS e P
 3. Execute o script e siga as instruções na tela.  
 
 ### Avisos
-- Sempre faça backup das configurações atuais de rede antes de usar.  
+- Sempre faça backup das configurações de rede antes de usar.  
 - Se houver apenas um adaptador conectado, ele será selecionado automaticamente.  
 - No modo automático de IP, o último octeto do IP atual será reaproveitado.
+- Não modifique o arquivo `.bat` fora das variáveis de configuração, isso pode causar erros.
 
 ---
 
